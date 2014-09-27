@@ -4,3 +4,4 @@ dist
 .sass-cache
 bower_components
 .idea
+app/assets/tweetie/api/config.php
