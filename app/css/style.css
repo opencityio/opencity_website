@@ -702,7 +702,7 @@ padding: 40px 15px;
     }
 }
 #twitterFeed > h3 { margin-top: 0px }
-#twitterFeed .item > img { float:left; margin-right: 10px;  }
+#twitterFeed .item > a { float:left; margin-right: 10px;  }
 #twitterFeed .item h4 { margin: 0px 0px 3px 55px; text-align: left; border-bottom: 0; }
 #twitterFeed a { color:#e96906 }
 #twitterFeed.carousel { height: auto; }
