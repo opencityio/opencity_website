@@ -73,7 +73,7 @@ wow.init();
 
 $('#twitterFeed .carousel-inner').twittie({
     'apiPath': '/assets/tweetie/api/tweet.php',
-    'template': '<div class="item">{{avatar}}<h3>{{tweet}}</h3></div>',
+    'template': '<div class="item">{{avatar}}<h4>{{tweet}}</h4></div>',
     'count': 10,
     'hideReplies': false,
     'username': 'opencityuk'

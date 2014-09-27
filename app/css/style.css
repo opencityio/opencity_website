@@ -78,9 +78,9 @@ i {
 	}
 
 .logo {
-	padding: 125px 0;
+	padding: 100px 0;
 	text-align:center;
-  background-image: url('/images/OClogo-purpleLGE.jpeg');
+  background-image: url('/images/OClogo-purple.jpg');
   background-repeat: no-repeat;
   background-position: 50% 20%;
 
@@ -695,7 +695,7 @@ padding: 40px 15px;
 }
 
 /*rgba(233,105,6,0.5);*/
-#twitterFeed { width: 60%; margin: 40px auto 0px ; background: rgba(130,29,89,0.6); padding: 10px; }
+#twitterFeed { width: 60%; margin: 40px auto 0px ; background: rgba(130,29,89,0.7); padding: 10px; }
 @media (max-width: 767px) {
     #twitterFeed {
         width: 80%;
@@ -703,6 +703,6 @@ padding: 40px 15px;
 }
 #twitterFeed > h3 { margin-top: 0px }
 #twitterFeed .item > img { float:left; margin-right: 10px;  }
-#twitterFeed .item h3 { margin: 0px 0px 3px 55px; text-align: left; border-bottom: 0; }
+#twitterFeed .item h4 { margin: 0px 0px 3px 55px; text-align: left; border-bottom: 0; }
 #twitterFeed a { color:#e96906 }
 #twitterFeed.carousel { height: auto; }
