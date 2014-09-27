@@ -134,4 +134,17 @@ $('#twitterFeed .carousel-inner').twittie({
     $('.carousel').carousel();
 });
 
+$('#twimages').twittie({
+    'apiPath': '/assets/tweetie/api/tweet.php',
+    'template': '<div class="col-xs-12 col-sm-4 col-md-2"><div class="thumbnail">{{tweet}}</div></div>',
+    'count': 1000,
+    'hideReplies': true,
+    'outputMediaOnly': true,
+    'mediaCount': 6,
+    'username': 'opencityuk'
+}, function() {
+    $('#twimages .item').first().addClass('active');
+    $('.carousel').carousel();
+});
+
 $('.process > div').eqHeights();
