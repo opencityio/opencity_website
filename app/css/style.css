@@ -211,7 +211,7 @@ to {
 	max-width:100%;
 }
 .headtext {
-    padding:75px 0;
+    padding:45px 0;
 	}
 /*========== 4. FEATURES ==============*/
 
@@ -694,7 +694,15 @@ padding: 40px 15px;
 
 }
 
-
-#twitterFeed { width: 60%; margin: 0 auto; background: rgba(255,255,255,0.4); padding: 10px; }
-#twitterFeed .avatar { float:left;width: 80px; height: 80px; background: #fff;margin-right: 10px; }
-#twitterFeed h3 { margin-bottom: 3px; text-align: left; border-bottom: 0; }
+/*rgba(233,105,6,0.5);*/
+#twitterFeed { width: 60%; margin: 40px auto 0px ; background: rgba(130,29,89,0.6); padding: 10px; }
+@media (max-width: 767px) {
+    #twitterFeed {
+        width: 80%;
+    }
+}
+#twitterFeed > h3 { margin-top: 0px }
+#twitterFeed .item > img { float:left; margin-right: 10px;  }
+#twitterFeed .item h3 { margin: 0px 0px 3px 55px; text-align: left; border-bottom: 0; }
+#twitterFeed a { color:#e96906 }
+#twitterFeed.carousel { height: auto; }
