@@ -709,8 +709,15 @@ padding: 40px 15px;
         width: 80%;
     }
 }
-#twitterFeed > h3 { margin-top: 0px; background:  url(/images/twitter-20-white.png) 0% 50% no-repeat; }
+#twitterFeed > h3 { margin-top: 0px; background: url(/images/twitter-20-white.png) 0% 50% no-repeat; }
 #twitterFeed .carousel-inner {  min-height: 69px;}
+@media (max-width: 480px) {
+    #twitterFeed .carousel-inner {  min-height: 180px;}
+}
+@media (max-width: 767px) {
+    #twitterFeed .carousel-inner {  min-height: 135px;}
+}
+
 #twitterFeed .item > a { float:left; margin-right: 10px; }
 #twitterFeed .item h4 { margin: 0px 0px 3px 55px; text-align: left; border-bottom: 0; }
 #twitterFeed a { color:#e96906 }
