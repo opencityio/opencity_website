@@ -101,15 +101,17 @@ $(function () {
 
 // PrettyPhoto 
 $(document).ready(function () {
-    $("area[data-rel^='prettyPhoto']").prettyPhoto();
-    $(".gallery:first a[data-rel^='prettyPhoto']").prettyPhoto({
-        animation_speed: 'normal',
-        theme: 'light_square',
-        slideshow: 3000,
-        autoplay_slideshow: true
-    });
+    //$("area[data-rel^='prettyPhoto']").prettyPhoto();
+    //$(".gallery:first a[data-rel^='prettyPhoto']").prettyPhoto({
+    //    animation_speed: 'normal',
+    //    theme: 'light_square',
+    //    slideshow: 3000,
+    //    autoplay_slideshow: true
+    //});
+    //wow.sync();
 });
 
+if(Modernizr.csstransitions) {
 // Wow.js
 var wow = new WOW(
     {
@@ -121,7 +123,7 @@ var wow = new WOW(
     }
 );
 wow.init();
-
+}
 
 $('#twitterFeed .carousel-inner').twittie({
     'apiPath': '/assets/tweetie/api/tweet.php',
@@ -143,8 +145,7 @@ $('#twimages').twittie({
     'mediaCount': 6,
     'username': 'opencityuk'
 }, function() {
-    $('#twimages .item').first().addClass('active');
-    $('.carousel').carousel();
-});
+    $("a[rel^='prettyPhoto']").prettyPhoto();
 
+});
 $('.process > div').eqHeights();
