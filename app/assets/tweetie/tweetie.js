@@ -126,7 +126,7 @@
                             for (var j = 0; j < mediaCount; j++ ) {
                                 var mItem = tweet.entities.media[j];
                                 if (mItem.type == 'photo' && (tweet.retweeted != true && undefined == tweet.retweeted_status) ){
-                                    tweetContent = '<a href="' + mItem.media_url + '" rel="prettyPhoto[tweetie]"><img src="' + mItem.media_url + ':thumb" /></a>';
+                                    tweetContent = '<a title="' + linking(tweet.text) + '" href="' + mItem.media_url + '" rel="prettyPhoto[tweetie]"><img src="' + mItem.media_url + ':thumb" /></a>';
                                     mediaOutputCount++;
                                     break;
                                 }

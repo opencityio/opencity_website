@@ -111,18 +111,24 @@ $(document).ready(function () {
     //wow.sync();
 });
 
+//if ( !Modernizr.backgroundsize ) {
+//    $('.masthead').css('background-color','#6883cc');
+//}
+
 if(Modernizr.csstransitions) {
-// Wow.js
-var wow = new WOW(
-    {
-        boxClass: 'wow',      // animated element css class (default is wow)
-        animateClass: 'animated', // animation css class (default is animated)
-        offset: 100,          // distance to the element when triggering the animation (default is 0)
-        mobile: true,       // trigger animations on mobile devices (default is true)
-        live: true        // act on asynchronously loaded content (default is true)
-    }
-);
-wow.init();
+    $('.process > div').eqHeights();
+
+    // Wow.js
+    var wow = new WOW(
+        {
+            boxClass: 'wow',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset: 100,          // distance to the element when triggering the animation (default is 0)
+            mobile: true,       // trigger animations on mobile devices (default is true)
+            live: true        // act on asynchronously loaded content (default is true)
+        }
+    );
+    wow.init();
 }
 
 $('#twitterFeed .carousel-inner').twittie({
@@ -148,4 +154,4 @@ $('#twimages').twittie({
     $("a[rel^='prettyPhoto']").prettyPhoto();
 
 });
-$('.process > div').eqHeights();
+
