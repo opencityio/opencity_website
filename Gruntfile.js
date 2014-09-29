@@ -305,8 +305,10 @@ module.exports = function (grunt) {
         uglify: {
             dist: {
                 files: {
-                    '<%= config.dist %>/scripts/scripts.js': [
-                        '<%= config.dist %>/scripts/scripts.js'
+                    '<%= config.dist %>/scripts/custom.js': [
+                        '<%= config.app %>/scripts/custom.js'
+
+/*                        '<%= config.dist %>/scripts/scripts.js',*/
                     ]
                 }
             }
@@ -465,7 +467,8 @@ module.exports = function (grunt) {
         'usemin',
         'cssmin',
         'imagemin',
-        'htmlmin'
+        'htmlmin',
+        'uglify:dist'
     ]);
 
     grunt.registerTask('default', [
