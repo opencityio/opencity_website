@@ -12,6 +12,8 @@ lock '3.2.1'
 set :application, 'opencity.io'
 set :repo_url, 'git@github.com:opencityio/opencity_website.git'
 
+
+
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
@@ -34,13 +36,15 @@ set :repo_url, 'git@github.com:opencityio/opencity_website.git'
 # set :linked_files, %w{config/database.yml}
 
 # Default value for linked_dirs is []
-# set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+# set :linked_dirs, %w{node_modules bower_components}
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
+
+set :grunt_tasks, 'build'
 
 namespace :deploy do
 

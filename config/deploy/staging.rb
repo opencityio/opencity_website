@@ -1,3 +1,6 @@
+set :branch, 'develop'
+set :deploy_to, '/var/www/opencity.ftd.io'
+
 # Simple Role Syntax
 # ==================
 # Supports bulk-adding hosts to roles, the primary server in each group
@@ -15,8 +18,7 @@ role :db,  %w{deploy@example.com}
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server 'example.com', user: 'deploy', roles: %w{web app}, my_property: :my_value
-
+server '188.226.206.147', user: 'ubuntu', roles: %w{web app}
 
 # Custom SSH Options
 # ==================
