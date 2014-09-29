@@ -22,6 +22,11 @@ module.exports = function (grunt) {
         dist: 'dist'
     };
 
+    var secret = grunt.file.readJSON('secret.json');
+
+    grunt.loadNpmTasks('grunt-ssh-deploy');
+
+
     // Define the configuration for all the tasks
     grunt.initConfig({
 
@@ -322,7 +327,8 @@ module.exports = function (grunt) {
                         '*.{ico,png,txt}',
                         'images/{,*/}**',
                         '{,*/}*.html',
-                        'assets/{,*/}**'
+                        'assets/{,*/}**',
+
                     ]
                 }, {
                     src: 'node_modules/apache-server-configs/dist/.htaccess',
@@ -376,7 +382,38 @@ module.exports = function (grunt) {
                 'imagemin',
                 'svgmin'
             ]
+        },
+
+        // deployment setup
+        secret: secret,
+        environments: {
+            staging: {
+                options: {
+                    host: '<%= secret.staging.host %>',
+                    username: '<%= secret.staging.username %>',
+                    privateKey: require('fs').readFileSync( secret.staging.key ),
+                    port: '<%= secret.staging.port %>',
+                    deploy_path: '/var/www/opencity.ftd.io',
+                    local_path: 'dist',
+                    current_symlink: 'current',
+                    debug: true,
+                    before_deploy: '',
+                    after_deploy: ''
+                }
+            },
+            production: {
+                options: {
+                    host: '<%= secret.production.host %>',
+                    username: '<%= secret.production.username %>',
+                    privateKey: require('fs').readFileSync( secret.production.key ),
+                    port: '<%= secret.production.port %>',
+                    deploy_path: '/full/path',
+                    local_path: 'dist',
+                    current_symlink: 'current'
+                }
+            }
         }
+
     });
 
 
