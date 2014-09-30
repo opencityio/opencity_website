@@ -409,9 +409,12 @@ module.exports = function (grunt) {
                     username: '<%= secret.production.username %>',
                     privateKey: require('fs').readFileSync( secret.production.key ),
                     port: '<%= secret.production.port %>',
-                    deploy_path: '/full/path',
+                    deploy_path: '/var/www/opencity.io',
                     local_path: 'dist',
-                    current_symlink: 'current'
+                    current_symlink: 'current',
+                    debug: true,
+                    before_deploy: '',
+                    after_deploy: ''
                 }
             }
         }
@@ -469,7 +472,7 @@ module.exports = function (grunt) {
         'imagemin',
         'htmlmin',
         'uglify:dist',
-        'modernizr:dist'
+        'str:dist'
     ]);
 
     grunt.registerTask('default', [
