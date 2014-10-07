@@ -15,7 +15,7 @@ body{
 	margin:0;
 	padding:0;
 	color:#2E2F30;
-	}
+}
 
 strong,b{
 	font-weight:600;
@@ -72,6 +72,11 @@ i {
 	/*background-size:cover;*/
 }
 
+.masthead.bloghead {
+    padding: 190px 15px;
+    background-image:url("../images/20141001-head-image.jpg");
+}
+
 .masthead .container{
 	animation:fadein 2s;
 	-moz-animation:fadein 2s;
@@ -86,6 +91,9 @@ i {
   background-repeat: no-repeat;
   background-position: 50% 20%;
 
+}
+.bloghead .logo {
+    background-position: 0% 20%;
 }
 .logo h1 {
     font-size:128px;
@@ -722,3 +730,4 @@ padding: 40px 15px;
 #twitterFeed .item h4 { margin: 0px 0px 3px 55px; text-align: left; border-bottom: 0; }
 #twitterFeed a { color:#e96906 }
 #twitterFeed.carousel { height: auto; }
+.big { font-size: 1.2em; }
