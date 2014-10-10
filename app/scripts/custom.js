@@ -101,6 +101,7 @@ $(function () {
 
 // PrettyPhoto 
 $(document).ready(function () {
+
     //$("area[data-rel^='prettyPhoto']").prettyPhoto();
     //$(".gallery:first a[data-rel^='prettyPhoto']").prettyPhoto({
     //    animation_speed: 'normal',
@@ -129,6 +130,7 @@ if(Modernizr.csstransitions) {
         }
     );
     wow.init();
+
 }
 
 $('#twitterFeed .carousel-inner').twittie({
@@ -155,3 +157,4 @@ $('#twimages').twittie({
 
 });
 
+$("a[rel^='prettyPhoto']").prettyPhoto();
