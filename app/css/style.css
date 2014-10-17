@@ -306,7 +306,7 @@ aside.clients img {
 @media(max-width:767px) {
     .masthead.bloghead {
         background-image:url("../images/20141001-head-image-small.jpg");
-        background-position-y: -70px;
+        background-position-y: -30px;
     }
     .logo {
         background-image: url('../images/OClogo-purpleSM.jpeg');
