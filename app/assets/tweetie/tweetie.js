@@ -107,7 +107,8 @@
                 that.html('');
 
                 var mediaOutputCount = 0;
-                for (var i = 0; i < settings.count; i++) {
+                var tCount = (twt.length < settings.count ? twt.length : settings.count);
+                for (var i = 0; i < tCount; i++) {
                     var tweet = false;
                     if (twt[i]) {
                         tweet = twt[i];

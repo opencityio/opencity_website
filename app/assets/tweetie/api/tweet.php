@@ -54,6 +54,7 @@
       $params = array(
           'count' => $number,
           'exclude_replies' => $exclude_replies,
+          'include_entities'=>true,
           'screen_name' => $username
       );
 

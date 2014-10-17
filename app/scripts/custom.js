@@ -147,14 +147,13 @@ $('#twitterFeed .carousel-inner').twittie({
 $('#twimages').twittie({
     'apiPath': '/assets/tweetie/api/tweet.php',
     'template': '<div class="col-xs-12 col-sm-4 col-md-2"><div class="thumbnail">{{tweet}}</div></div>',
-    'count': 1000,
+    'count': 100,
     'hideReplies': true,
     'outputMediaOnly': true,
     'mediaCount': 6,
     'username': 'opencityuk'
 }, function() {
-    $("a[rel^='prettyPhoto']").prettyPhoto();
-
+    $("#twimages a[rel^='prettyPhoto']").prettyPhoto();
 });
 
 $("a[rel^='prettyPhoto']").prettyPhoto();
