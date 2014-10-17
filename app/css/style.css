@@ -745,3 +745,6 @@ padding: 40px 15px;
 .backtobutton {
     background: #831e59;  padding:10px; color: #fff; text-align: center; margin:30px auto 0px; width: 148px; display: block;
 }
+a {
+    color: #000;
+}
