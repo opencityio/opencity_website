@@ -54,7 +54,6 @@ i {
 .highlight{background:#f4f4f4;margin-top:40px;}
 
 .masthead{
-
 	position:relative;
 	padding:80px 15px;
 	color:#FFF;
@@ -73,9 +72,9 @@ i {
 }
 
 .masthead.bloghead {
-    padding: 190px 15px;
-    background-image:url("../images/20141001-head-image-small.jpg");
-
+    padding:80px 15px;
+    background-image:url("../images/20141001-head-image.jpg");
+    background-position-y: -50px;
 }
 
 .masthead .container{
@@ -83,7 +82,7 @@ i {
 	-moz-animation:fadein 2s;
 	-webkit-animation:fadein 2s;
 	-o-animation:fadein 2s;
-	}
+}
 
 .logo {
 	padding: 100px 0;
@@ -91,7 +90,6 @@ i {
   background-image: url('/images/OClogo-purple.jpg');
   background-repeat: no-repeat;
   background-position: 50% 20%;
-
 }
 .bloghead .logo {
     background-position: 0% 20%;
@@ -306,11 +304,15 @@ aside.clients img {
     margin: 50px auto;
 }
 @media(max-width:767px) {
+    .masthead.bloghead {
+        background-image:url("../images/20141001-head-image-small.jpg");
+    }
+    .logo {
+        background-image: url('/images/OClogo-purpleSM.jpeg');
+    }
+
     aside.clients {
         height:500px;
-    }
-    .masthead.bloghead {
-        background-image:url("../images/20141001-head-image.jpg");
     }
 
 }
@@ -713,8 +715,8 @@ padding: 40px 15px;
  @media (max-width: 480px) {
 	 /*Media Queries for smaller devices*/
 	 .masthead {
-	background-attachment: scroll;
-}
+	    background-attachment: scroll;
+    }
 
 }
 @media (max-width: 767px) {
