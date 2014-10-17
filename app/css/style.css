@@ -202,6 +202,16 @@ to {
 	-webkit-animation: arrowbounce 1s alternate infinite; /* Safari and Chrome */
 	-o-animation: arrowbounce 1s alternate infinite; /* Opera */
 }
+.scroll-link.scrollto, .scroll-link.scrollto:hover {
+    display: inline;
+    margin: auto;
+    text-decoration: underline;
+    color: #000;
+    width: auto;
+}
+.scroll-link.scrollto:hover {
+    text-decoration: none;
+}
 /*========== 3. HERO IMAGE ==============*/
 
 .section-title {
