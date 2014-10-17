@@ -74,7 +74,8 @@ i {
 
 .masthead.bloghead {
     padding: 190px 15px;
-    background-image:url("../images/20141001-head-image.jpg");
+    background-image:url("../images/20141001-head-image-small.jpg");
+
 }
 
 .masthead .container{
@@ -307,6 +308,9 @@ aside.clients img {
 @media(max-width:767px) {
     aside.clients {
         height:500px;
+    }
+    .masthead.bloghead {
+        background-image:url("../images/20141001-head-image.jpg");
     }
 
 }
