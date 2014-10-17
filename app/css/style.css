@@ -309,7 +309,7 @@ aside.clients img {
         background-position: -100px;
     }
     .logo {
-        background-image: url('/images/OClogo-purpleSM.jpeg');
+        background-image: url('../images/OClogo-purpleSM.jpeg');
     }
 
     aside.clients {
