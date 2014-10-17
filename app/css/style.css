@@ -54,6 +54,7 @@ i {
 .highlight{background:#f4f4f4;margin-top:40px;}
 
 .masthead{
+    margin-top: 50px;
 	position:relative;
 	padding:80px 15px;
 	color:#FFF;
@@ -74,7 +75,6 @@ i {
 .masthead.bloghead {
     padding:80px 15px;
     background-image:url("../images/20141001-head-image.jpg");
-    background-position-y: -50px;
 }
 
 .masthead .container{
@@ -306,6 +306,7 @@ aside.clients img {
 @media(max-width:767px) {
     .masthead.bloghead {
         background-image:url("../images/20141001-head-image-small.jpg");
+        background-position: -100px;
     }
     .logo {
         background-image: url('/images/OClogo-purpleSM.jpeg');
@@ -753,4 +754,9 @@ padding: 40px 15px;
 }
 a {
     color: #000;
+}
+
+li.active a {
+    background-color: #831e59 !important;
+    color: #fff !important;
 }
