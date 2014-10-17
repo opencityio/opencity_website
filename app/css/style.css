@@ -73,7 +73,7 @@ i {
 }
 
 .masthead.bloghead {
-    padding:60px 15px;
+    padding:180px 15px;
     background-image:url("../images/20141001-head-image.jpg");
 }
 
@@ -306,7 +306,7 @@ aside.clients img {
 @media(max-width:767px) {
     .masthead.bloghead {
         background-image:url("../images/20141001-head-image-small.jpg");
-        padding: 30px 15px;
+        /*padding: 30px 15px;*/
     }
     .logo {
         background-image: url('../images/OClogo-purpleSM.jpeg');
