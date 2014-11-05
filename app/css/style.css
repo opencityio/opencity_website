@@ -77,6 +77,12 @@ i {
     background-image:url("../images/20141001-head-image.jpg");
 }
 
+.masthead.musichead {
+    padding:180px 15px;
+    background-image:url("../images/music-postit.jpg");
+}
+
+
 .masthead .container{
 	animation:fadein 2s;
 	-moz-animation:fadein 2s;
