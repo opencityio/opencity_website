@@ -82,6 +82,10 @@ i {
     background-image:url("../images/music-postit.jpg");
 }
 
+.masthead.businesshead {
+    padding:180px 15px;
+    background-image:url("../images/business-header.jpg");
+}
 
 .masthead .container{
 	animation:fadein 2s;
