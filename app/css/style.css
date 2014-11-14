@@ -766,3 +766,11 @@ li.active a {
     background-color: #831e59 !important;
     color: #fff !important;
 }
+
+.countdownWrap { width: 50%;
+    margin: 40px auto 0px;
+    background: rgba(130,29,89,0.7);
+    padding: 10px;}
+@media (max-width: 767px) {
+    .countdownWrap { width: 80%; }
+}
