@@ -772,5 +772,14 @@ li.active a {
     background: rgba(130,29,89,0.7);
     padding: 10px;}
 @media (max-width: 767px) {
-    .countdownWrap { width: 80%; }
+    .countdownWrap { width: 100%; }
+
+    .masthead.home {
+        width:100%;
+        padding:0px;
+    }
+    .masthead.home .container {
+        width:100%;
+        padding:0px;
+    }
 }

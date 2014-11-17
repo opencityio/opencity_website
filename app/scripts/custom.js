@@ -147,7 +147,7 @@ $('#twitterFeed .carousel-inner').twittie({
 $('#twimages').twittie({
     'apiPath': '/assets/tweetie/api/tweet.php',
     'template': '<div class="col-xs-12 col-sm-4 col-md-2"><div class="thumbnail">{{tweet}}</div></div>',
-    'count': 100,
+    'count': 300,
     'hideReplies': true,
     'outputMediaOnly': true,
     'mediaCount': 6,
