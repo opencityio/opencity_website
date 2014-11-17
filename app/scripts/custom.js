@@ -158,8 +158,8 @@ $('#twimages').twittie({
 
 $("a[rel^='prettyPhoto']").prettyPhoto();
 
-jQuery(function(){
-    jQuery('#flipcountdownbox1').flipcountdown({
-        beforeDateTime:'11/15/2014 20:00:00'
-    });
-})
+//jQuery(function(){
+//    jQuery('#flipcountdownbox1').flipcountdown({
+//        beforeDateTime:'11/15/2014 20:00:00'
+//    });
+//})
