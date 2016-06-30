@@ -3,7 +3,7 @@
     "private": true,
     "dependencies": {
         "bootstrap-sass-official": "~3.2.0",
-        "modernizr": "~2.8.2",
+        "modernizr": "~2.8.3",
         "jquery-pjax": "~1.9.2",
         "tweetie": "2.4.2"
     }
